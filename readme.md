@@ -4,7 +4,7 @@ The client is tested but not battle tested. For detailed API documentation go to
 
 ## Install
 
-No versions supported at the moment only master.
+No versions supported at the moment only master targeting BankID API version 5.1.
 
 Install
 

@@ -1,6 +1,6 @@
 # Swedish BankID API client for Go
 
-The client is tested but not battle tested. For detailed API documentation go to (https://www.bankid.com)[https://www.bankid.com].
+The client is tested but not battle tested. For detailed API documentation go to [https://www.bankid.com](https://www.bankid.com).
 
 ## Install
 

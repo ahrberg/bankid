@@ -17,7 +17,23 @@ type CollectResponse struct {
 	OrderRef       string `json:"orderRef"`
 	Status         string `json:"status"`
 	HintCode       string `json:"hintCode"`
-	CompletionData string `json:"completionData"`
+	CompletionData struct {
+		User struct {
+			PersonalNumber string `json:"personalNumber"`
+			Name           string `json:"name"`
+			GivenName      string `json:"givenName"`
+			Surname        string `json:"surname"`
+		} `json:"user"`
+		Device struct {
+			IPAddress string `json:"ipAddress"`
+		} `json:"device"`
+		Cert struct {
+			NotBefore string `json:"notBefore"`
+			NotAfter  string `json:"notAfter"`
+		} `json:"cert"`
+		Signature    string `json:"signature"`
+		OcspResponse string `json:"ocspResponse"`
+	} `json:"completionData"`
 }
 
 func (c *Client) Collect(ctx context.Context, params *CollectRequest) (*CollectResponse, error) {
